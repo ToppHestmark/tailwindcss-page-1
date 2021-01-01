@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tailwind CSS</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <nav role="navigation" class="flex justify-between items-center h-16 bg-gradient-to-r from-purple-700 to-purple-600 text-white relative">
+    <a href="index.html" class="pl-6">FOO</a>
+    <div class="px-4 cursor-pointer md:hidden" id="bars">
+      <svg 
+        class="w-8 h-8" 
+        fill="none" 
+        stroke="currentColor" 
+        viewBox="0 0 24 24" 
+        xmlns="http://www.w3.org/2000/svg"
+        >
+          <path 
+            stroke-linecap="round" 
+            stroke-linejoin="round" 
+            stroke-width="2" 
+            d="M4 6h16M4 12h16M4 18h16">
+          </path>
+      </svg>
+    </div>
+    <div class="hidden md:block" id="menu">
+      <a href="index.html" class="p-4">Home</a>
+      <a href="#" class="p-4">About</a>
+      <a href="#" class="p-4">Contact</a>
+    </div>
+  </nav>
+  <script src="app.js"></script>
+</body>
+</html>
